@@ -9,8 +9,6 @@ window.onload = function() {
         });
 
         projeler = projeler + "</ul>";
-
-        console.log(projeler);
     
         $("#projeMain").html(projeler);
     });
