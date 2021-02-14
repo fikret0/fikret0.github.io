@@ -1,3 +1,6 @@
 ## fikret.dev
 
-Site linki: [:))))](https://fikret.dev/)
+Bunun için yazacak çok birşeyim yok.
+Kodlar yukarıda.
+
+[Siteye Git](https://fikret.dev/)
