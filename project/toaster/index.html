@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Toaster Hile Koruma Sistemi</title>
+        <link rel="stylesheet" href="assets/main.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="assets/main.js"></script>
+        <link rel="stylesheet" href="assets/prism.css">
+    </head>
+    <body>
+        <script src="assets/prism.js"></script>
+
+        <img src="assets/img/toaster.png" style="height: 250px;" class="center">
+        <h2 class="centeryazi">Toaster</h2>
+        <p class="centeryazi">Cross platform hile koruma sistemi</p>
+        <p class="centeryazi"><b>Cheat Engine</b>, <b>DLL Injector</b> vs. programlardan korunma... Hepsi Toaster'da!</p>
+        <p class="centeryazi">Desteklenen Diller:
+            <ul>
+                <li>C#</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>IronPython</li>
+                <li>Java (Kısmen)</li>
+            </ul>
+        </p>
+
+        <article id="indirme">
+            <h2 class="centeryazi">İndirme</h2>
+
+            <img src="assets/img/windows.svg" class="center" style="height:50px">
+            <p class="centeryazi"><b>Windows</b></p>
+
+            <fieldset class="zipicerigi">
+                <legend>Zip İçeriği</legend>
+                <p><b>Toaster.Connection</b> Kütüphanesi</p>
+                <p><b>Toaster</b> Binary Dosyaları</p>
+                <hr>
+                <p>Toplam boyut: <b>485 KB</b></p>
+            </fieldset>
+
+            <br>
+
+            <button id="indirButton">İndir</button>
+        </article>
+
+        <article id="kullanim">
+            <h2 class="centeryazi">Kullanım</h2>
+            <h3 class="centeryazi">Toaster.Connection</h2>
+            <h4 class="centeryazi">Yerel ağda çalışan bir Toaster serverine bağlanma</h4>
+
+<pre style="width: 450px;margin: 0 auto; display: block; font-size: small;"><code class="language-cs">ToasterConnection conn = new ToasterConnection("127.0.0.1");
+conn.Open();</code></pre>
+
+            <p class="centeryazi">Evet! bağlantı işte bu kadar kolay!</p>
+            <h4 class="centeryazi">Hile yakalama</h4>
+
+<pre style="width: 750px;margin: 0 auto; display: block; font-size: small;"><code class="language-cs">static void Main(string[] args)
+{
+    ToasterConnection conn = new ToasterConnection("127.0.0.1");
+    conn.Open();
+                
+    conn.HileBulundu += hileBulundu;
+                
+    Console.ReadLine();
+}
+                
+static void hileBulundu(object sender, HileBulunduEventArgs e)
+{
+    Hile bulunan = e.Hile;
+                
+    Console.WriteLine($"Ad: {bulunan.HileAdi} Process Adı: {bulunan.ProcessAdi} PID: {bulunan.PID}");
+}</code></pre>
+
+        </article>
+        <br>
+        <hr>
+        <footer class="centeryazi">İletişim: <a href="tel:+905323177883">05323177883</a> / <a href="mailto:fikretuwu@gmail.com">fikretuwu@gmail.com</a></footer>
+    </body>
+</html>

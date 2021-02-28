@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centeryazi{
+    text-align: center;
+}
+
+body{
+    background-color: aquamarine;
+    color: rgb(43, 41, 41);
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.anabaslik{
+    text-align: center; 
+    font-size:xx-large;
+}
+
+ul{
+    text-align: center;
+    list-style: inside;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 200px;
+}
+
+.zipicerigi{
+    border: 1px groove #ddd !important;
+    -webkit-box-shadow:  0px 0px 0px 0px rgb(43, 41, 41);
+            box-shadow:  0px 0px 0px 0px rgb(43, 41, 41);
+    width: 500px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+button{
+    background-color: transparent;
+    text-align: center;
+    padding: 25px 40px;
+    border-radius: 3px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid rgb(43, 41, 41);
+    cursor: pointer;
+    transition-duration: 0.4s;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(43, 41, 41);
+    color: white;
+}
+
+a {
+    color: rgb(43, 41, 41);
+}
+
+hr{
+    background-color: transparent;
+}
