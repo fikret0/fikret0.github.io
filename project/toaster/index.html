@@ -49,13 +49,21 @@
             <h3 class="centeryazi">Toaster.Connection</h2>
             <h4 class="centeryazi">Yerel ağda çalışan bir Toaster serverine bağlanma</h4>
 
-<pre style="width: 450px;margin: 0 auto; display: block; font-size: small;"><code class="language-cs">ToasterConnection conn = new ToasterConnection("127.0.0.1");
+<pre style="width: 450px;margin: 0 auto; display: block; font-size: small;"><code class="language-cs">using Toaster.Connection;
+
+...
+
+ToasterConnection conn = new ToasterConnection("127.0.0.1");
 conn.Open();</code></pre>
 
             <p class="centeryazi">Evet! bağlantı işte bu kadar kolay!</p>
             <h4 class="centeryazi">Hile yakalama</h4>
 
-<pre style="width: 750px;margin: 0 auto; display: block; font-size: small;"><code class="language-cs">static void Main(string[] args)
+<pre style="width: 750px;margin: 0 auto; display: block; font-size: small;"><code class="language-cs">using Toaster.Connection;
+
+...    
+
+static void Main(string[] args)
 {
     ToasterConnection conn = new ToasterConnection("127.0.0.1");
     conn.Open();
