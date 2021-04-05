@@ -5,6 +5,7 @@ window.onload = function() {
         $.each(data, function(i, value){
             if(value.fork === false && value.name != "fikret0" && value.name != "fikret0.github.io"){
                 projeler = projeler + "<li><a href=\"" + value.html_url + "\">" + value.name + "</a></li>";
+                console.log(value.name);
             }
         });
 
