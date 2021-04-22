@@ -1,7 +1,5 @@
 ## fikret.dev
 
-Bunun için yazacak çok birşeyim yok.
-
-Kodlar yukarıda.
+sj
 
 [Siteye Git](https://fikret.dev/)
