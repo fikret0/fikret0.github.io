@@ -34,6 +34,12 @@ echo ":: Creating symlinks..."
 chmod +x "/usr/share/light/light.py"
 sudo ln -s "/usr/share/light/light.py" "/usr/bin/light"
 
+echo ":: Installing dependencies..."
+
+sudo pip install gitpython
+sudo pip install requests
+sudo pip install asyncio
+
 echo ":: Cleaning up..."
 
 sudo rm -rf "/tmp/light.zip"
