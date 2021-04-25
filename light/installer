@@ -46,3 +46,4 @@ echo ":: Cleaning up..."
 sudo rm -rf "/tmp/light.zip"
 
 echo ":: Successfully installed light."
+
