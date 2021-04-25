@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+if [ "$EUID" -ne 0 ]
+    then echo "light uninstallation script must be run as root."
+    exit
+fi
+
+echo ":: Removing installed apps..."
+
+light remove all
+
+echo ":: Removing installation..."
+
+sudo rm -rf "/usr/bin/light" "/usr/share/light"
+
+echo ":: Successfully uninstalled light."
