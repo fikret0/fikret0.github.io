@@ -39,6 +39,7 @@ echo ":: Installing dependencies..."
 sudo pip install gitpython
 sudo pip install requests
 sudo pip install asyncio
+sudo pip install tinydb
 
 echo ":: Cleaning up..."
 
